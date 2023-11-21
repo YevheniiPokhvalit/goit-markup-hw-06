@@ -91,6 +91,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 149px;
 }
 
 .logo-text {
@@ -129,6 +130,11 @@ img {
   position: relative;
   color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger-menu {
+  display: block;
+  margin: 16px 0;
 }
 
 .nav-menu-studio {
@@ -741,6 +747,9 @@ img {
   .model-window {
     width: 408px;
     min-height: 584px;
+  }
+  .burger-menu {
+    display: none;
   }
 }
 
