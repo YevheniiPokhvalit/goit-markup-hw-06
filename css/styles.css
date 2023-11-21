@@ -91,7 +91,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 
 .logo-text {
@@ -357,15 +356,14 @@ img {
 .footer-wrap {
   display: flex;
   align-items: baseline;
-}
-
-.footer-logo {
-  margin-right: 120px;
+  flex-wrap: wrap;
+  row-gap: 72px;
 }
 
 .footer .logo {
-  display: inline-block;
+  display: flex;
   margin-bottom: 16px;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -381,7 +379,7 @@ img {
 }
 .footer-text {
   color: #f4f4fd;
-  max-width: 264px;
+  max-width: 288px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
@@ -394,10 +392,11 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-social {
-  margin-right: 80px;
+  margin: 0 auto;
 }
 
 .footer-social .social_card {
@@ -418,18 +417,21 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-align: center;
 }
 
 .models-form {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .models-label {
 }
 
 .input-email {
-  width: 264px;
+  width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -488,8 +490,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -677,6 +679,9 @@ img {
   .container {
     max-width: 768px;
   }
+  .logo {
+    margin-right: 76px;
+  }
   .nav-list {
     display: flex;
     gap: 40px;
@@ -701,14 +706,37 @@ img {
   .features-list {
     width: calc((100% - 24px) / 2);
   }
-  .our-team-list {
-    /* width: calc((100% - 72px) / 2); */
-  }
+
   .our-team-card {
     row-gap: 82px;
   }
   .our-portfolio-list {
     width: calc((100% - 48px) / 2);
+  }
+  .input-email {
+    max-width: 264px;
+  }
+  .footer-wrap {
+    max-width: 535px;
+  }
+  .footer-logo {
+    margin-right: 24px;
+  }
+  .footer-social {
+    margin: 0;
+  }
+  .footer-text {
+    max-width: 264px;
+  }
+  .footer-social-text {
+    text-align: left;
+  }
+  .models-text {
+    text-align: left;
+  }
+  .footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
   }
 }
 
@@ -741,5 +769,11 @@ img {
   }
   .our-portfolio-list {
     width: calc((100% - 48px) / 3);
+  }
+  .footer-social {
+    margin: 0 80px 0 0;
+  }
+  .footer-logo {
+    margin-right: 120px;
   }
 }
