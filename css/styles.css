@@ -403,9 +403,14 @@ img {
   background-color: #31d0aa;
 }
 
+.mobile-menu-container {
+  margin: 0 auto;
+}
 .mobile-menu {
+  position: relative;
   max-width: 280px;
   margin: 0 auto;
+  padding: 72px 24px 40px 16px;
 }
 .mobile-menu .nav-list,
 .mobile-menu .header-address-list {
@@ -439,7 +444,7 @@ img {
 
 .mobile-menu .social_card {
   justify-content: left;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 /* model */
